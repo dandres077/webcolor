@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="query/jquery-3.5.1.min.js"></script>
+<script src="contenidos/materia.js"></script>
+<script src="contenidos/menuRecta.js"></script>
+<script src="colabora/fraccionarios.js"></script>
+<script src="colabora/valida.js"></script>
+<script src="colabora/dom.js"></script>
+<script src="colabora/plantilla.js"></script>
+<script src="colabora/recorte.js"></script>
+<script src="colabora/variablesEstatica.js"></script>
+<script src="colabora/canvas.js"></script>
+<script src="colabora/resuelveEcuacion.js"></script>
+<script src="colabora/separaNumLit.js"></script>
+<script src="colabora/generaEjercicios.js"></script>
+<script src="colabora/multiplicaTerms.js"></script>
+<script src="colabora/operacionesFilas.js"></script>
+<script src="colabora/operacionesBasicas.js"></script>
+
+<script src="colabora/separaTerminos.js"></script>
+<script src="colabora/operacionesMatriciales.js"></script>
+
+<script src="Conceptualización/conDesa.js"></script>
+<script src="Conceptualización/menuConce.js"></script>
+
+<script src="contenidos/expEjer/actiApre.js"></script>
+<script src="contenidos/expEjer/experto.js"></script>
+<script src="contenidos/expEjer/reemplazoEcuacion.js"></script>
+
+<script src="contenidos/lineaRecta/puntoPendiente.js"></script>
+<script src="contenidos/lineaRecta/ecuacionConDosPuntos.js"></script>
+<script src="contenidos/lineaRecta/paralelaPerpendicular.js"></script>
+<script src="contenidos/lineaRecta/pendiente.js"></script>
+<script src="contenidos/lineaRecta/clsMaterial.js"></script>
+
+<script src="simultaneas/dosEcua.js"></script>
+<script src="simultaneas/materiaSimultanea.js"></script>
+    
+<script src="simultaneas/menuSimul.js"></script>
+<script src="simultaneas/unaVar.js"></script>
+<script src="simultaneas/claseMatSim.js"></script>
+<script src="simultaneas/soluSimul.js"></script>
+<script src="simultaneas/tresEcua.js"></script>
+
+<script src="gaussJordan/gaussJordan.js"></script>
+<script src="gaussJordan/Gauss.js"></script>
+<script src="gaussJordan/menuGauss.js"></script>
+<script src="gaussJordan/cuadrado.js"></script>
+
+
+       
+        <style>
+            #teo{
+                border: orange solid;
+                /*   https://programadorwebvalencia.com/cursos/javascript/eventos/*/
+            }
+           .me{
+                background: gray;
+                color: white;
+                 width:14em;
+                
+            }
+         li{
+                display: inline;
+                width:18em;
+                 border-right: 2px solid white;
+              
+                 color:#ff6699;
+            }
+            
+            #men{
+                width: 70em;   
+            }
+       
+        </style>
+   
+    </head>
+    <body>
+        
+   
+       
+        <script>
+   main();
+   function main()
+   {
+    
+   var mainu = " <li id = 'm0' class ='me'>Conceptualización</li>"+ 
+           " <li id = 'm1' class ='me'>La línea recta</li>"+
+        " <li id = 'm2' class ='me'>EcuacionesSimultáneas</li>"+
+        " <li id = 'm3' class ='me'>Gauss Jordan</li"+
+     " ";
+     $("body").append("<div id='men'>");
+     $("#men").append(mainu);
+     
+    
+ 
+   
+}
+ 
+$(".me").hover(function(){
+    
+    var at = $(this).attr("id");
+    var op = at.substring(1);
+    var opi = parseInt(op);
+  
+  
+  
+    if(opi===0)
+    {
+       menuConce();   
+      
+    }
+     else  if(opi===1)
+     {
+          menuRecta();
+     }
+    else  if(opi===2)
+    {
+       
+        menuSimul(at);
+    }
+    else  if(opi===3)
+    {
+        menuGauss();
+       // alert("dop = "+op);
+       
+    }
+    
+});
+           </script>
+           
+                    
+    
+    </body>
+</html>
