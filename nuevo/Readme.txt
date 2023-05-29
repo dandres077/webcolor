@@ -1,6 +1,4 @@
-Thanks for downloading this template!
-
-Template Name: Nova
-Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-Author: BootstrapMade.com
+Template Name: UNITEC
+Updated: Mayio 29 2023 
+Author: David Contreras
 License: https://bootstrapmade.com/license/
